@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Document</title>
+    <STyle>
+        * {
+            margin: 0;
+            font-family: "微軟正黑體";
+            scroll-behavior: smooth;
+
+        }
+
+        /* 上方連結樣式 */
+        a {
+            text-decoration: none;
+            color: #8B8B8B;
+        }
+
+        a:visited {
+            color: #8B8B8B;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #8DD0D4;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: #8DD0D4;
+            text-decoration: none;
+        }
+
+        /* 首頁固定內容 */
+        .home {
+            width: 100%;
+            height: 937px;
+            background-color: #EAE5E5;
+        }
+
+        .home h1 {
+            position: relative;
+            left: 430px;
+            top: 90px;
+            font-size: 72px;
+            float: left;
+        }
+
+        .home h2 {
+            position: relative;
+            left: 230px;
+            top: 195px;
+            font-size: 36px;
+            float: left;
+        }
+
+        .home ul {
+            list-style: none;
+            display: flex;
+            position: absolute;
+            left: 870px;
+            top: 200px;
+
+        }
+
+        .home li {
+            font-size: 18px;
+            margin-left: 40px;
+            font-family: "noticia text";
+        }
+
+        /* 首頁內容物 */
+        .home_container p {
+            position: absolute;
+            left: 953px;
+            top: 306px;
+            font-size: 72px;
+            color: #4D4D4D;
+        }
+
+        .home_container .text {
+            position: absolute;
+            left: 953px;
+            top: 400px;
+            font-size: 60px;
+            color: #4D4D4D;
+
+        }
+
+        .home_container .photo {
+            height: 376px;
+            width: 376px;
+            border-radius: 50%;
+            background-image: url(/julian/img/1.jpg);
+            background-size: cover;
+            position: absolute;
+            left: 430px;
+            top: 306px;
+        }
+
+        .home_container .experience {
+            height: 138px;
+            width: 138px;
+            border-radius: 50%;
+            background-color: #E83556;
+            position: absolute;
+            top: 545px;
+            left: 950px;
+            font-size: 24px;
+            color: whitesmoke;
+            text-align: center;
+            line-height: 138px;
+        }
+
+        .home_container .works {
+            height: 138px;
+            width: 138px;
+            border-radius: 50%;
+            background-color: #61D0D4;
+            position: absolute;
+            top: 545px;
+            left: 1150px;
+            font-size: 24px;
+            color: whitesmoke;
+            text-align: center;
+            line-height: 138px;
+        }
+
+        .home_container .skill {
+            height: 138px;
+            width: 138px;
+            border-radius: 50%;
+            background-color: #D1C926;
+            position: absolute;
+            top: 545px;
+            left: 1350px;
+            font-size: 24px;
+            color: whitesmoke;
+            text-align: center;
+            line-height: 138px;
+        }
+
+        .border {
+            border: solid 1px black;
+            float: left;
+            position: relative;
+            width: 1000px;
+            top: 210px;
+            left: 290px;
+        }
+      
+
+        /* 經驗內容物 */
+        .experience_container {
+            width: 100%;
+            height: 937px;
+            background-color: #EAE5E5;
+        }
+
+        .experience_container .title {
+            position: relative;
+            float: left;
+            left: 430px;
+            top: 90px;
+            font-size: 72px;
+        }
+        .text_container{
+            width: 1000px;
+            height: 300px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-52%,-60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 25px;
+        }
+
+        /* 作品內容物 */
+        .works_container {
+            width: 100%;
+            height: 937px;
+            background-color: #EAE5E5;
+        }
+
+        .works_container .title {
+            position: relative;
+            float: left;
+            left: 430px;
+            top: 90px;
+            font-size: 72px;
+        }
+
+        .swiper {
+            position: relative;
+            top: 300px;
+        }
+
+        .swiper-container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+
+        .swiper-pagination {
+            position: relative;
+            float: left;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-45%);
+        }
+
+        .swiper-pagination-bullets .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 30px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: rgb(235, 111, 111);
+        }
+
+        /* 技能內容物 */
+        .skill_container {
+            width: 100%;
+            height: 937px;
+            background-color: #EAE5E5;
+        }
+
+        .skill_container .title {
+            position: relative;
+            float: left;
+            left: 430px;
+            top: 90px;
+            font-size: 72px;
+        }
+
+        /* 設計內容 */
+        .design {
+            width: 1000px;
+            height: 200px;
+            position: relative;
+            top: 220px;
+            left: 435px;
+        }
+
+        .design_pic {
+            width: 80px;
+            height: 80px;
+            background-color: #E83556;
+            border-radius: 50%;
+            float: left;
+            line-height: 80px;
+            font-size: 25px;
+            color: whitesmoke;
+            text-align: center;
+            position: relative;
+            left: 300px;
+        }
+
+        .design_container {
+            width: 1000px;
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .design .ps {
+            width: 100px;
+            height: 100px;
+            background-image: url(/julian/img/photoshop.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .design .ai {
+            width: 100px;
+            height: 100px;
+            background-image: url(/julian/img/illustrator.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .design_container .connectiontext {
+            font-size: 30px;
+        }
+
+        /* 程式內容 */
+        .program {
+            width: 1000px;
+            position: relative;
+            top: 250px;
+            left: 435px;
+        }
+
+        .program_border {
+            border: solid 1px black;
+            margin-bottom: 10px;
+        }
+
+        .program_pic {
+            width: 80px;
+            height: 80px;
+            background-color: #E83556;
+            border-radius: 50%;
+            float: left;
+            line-height: 80px;
+            font-size: 25px;
+            color: whitesmoke;
+            text-align: center;
+            position: relative;
+            left: 450px;
+        }
+        .program_container {
+            width: 1000px;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+        }
+        .program .css {
+            width: 100px;
+            height: 100px;
+            margin-left: 100px;
+            margin-right: 150px;
+            background-image: url(/julian/img/css.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .program .jq {
+            width: 100px;
+            height: 100px;
+            margin-right: 120px;
+            margin-left: 100px;
+            background-image: url(/julian/img/JQ.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .program .bootstrap {
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            margin-right: 110px;
+            margin-left: 100px;
+            background-image: url(/julian/img/bootstrap.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .program .js {
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            margin-right: 100px;
+            margin-left: 80px;
+            background-image: url(/julian/img/JS.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .program .connectiontext{
+            margin-right: 50px;
+            font-size: 30px;
+        }
+        .bootstraptext{
+            margin-top: 50px;
+        }
+        .jstext{
+            margin-top: 50px;
+        }
+
+
+        /* 頁尾 */
+        .bottom {
+            width: 100%;
+            height: 137px;
+            background-color: #f1caca;
+            position: fixed;
+            bottom: 0;
+            z-index: 999;
+
+        }
+
+        .connection {
+            width: 50%;
+            position: relative;
+            left: 25%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .fb {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background-image: url(/julian/img/fb.png);
+            background-size: cover;
+        }
+
+        @keyframes fb {
+            25% {
+                transform: translateY(-10px);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+
+            75% {
+                transform: translateY(-5px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .fb:hover {
+            animation: fb 1s 2;
+        }
+
+        .ig {
+            height: 45px;
+            width: 45px;
+            /* border-radius: 50%; */
+            background-image: url(/julian//img/ig.png);
+            background-size: cover;
+        }
+
+        @keyframes ig {
+            25% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(270deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .ig:hover {
+            animation: ig 1s 2;
+        }
+
+        .line {
+            height: 45px;
+            width: 45px;
+            background-size: cover;
+            background-image: url(/julian//img/line.png);
+            background-size: cover;
+        }
+
+        @keyframes line {
+            25% {
+                transform: scale(0.5);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            75% {
+                transform: scale(0.5);
+            }
+
+            100% {
+                transform: scale(1.);
+            }
+        }
+
+        .line:hover {
+            animation: line 1.2s 2;
+        }
+
+        .phone {
+            height: 45px;
+            width: 45px;
+            /* border-radius: 50%; */
+            background-image: url(/julian//img/phone.png);
+            background-size: cover;
+        }
+
+        @keyframes swing {
+            25% {
+                transform: rotate(25deg);
+            }
+
+            50% {
+                transform: rotate(-25deg);
+            }
+
+            75% {
+                transform: rotate(10deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .phone:hover {
+            animation: swing 1.2s 2;
+        }
+
+        .connectiontext {
+            line-height: 45px;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+        }
+
+        .top {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 100px;
+            background-image: url(/julian/img/top.png);
+            background-size: cover;
+            margin: 15px;
+            -webkit-transition: margin 0.5s ease-out;
+            -moz-transition: margin 0.5s ease-out;
+            -o-transition: margin 0.5s ease-out;
+        }
+
+        .top:hover {
+            margin-top: 2px;
+        }
+    </STyle>
+</head>
+
+<body>
+    <div class="home">
+        <h1>Julian</h1>
+        <h2>前端工程師 / 網頁設計師</h2>
+        <ul>
+            <a href="#home_container">
+                <li>HOME</li>
+            </a>
+            <a href="#experience_container">
+                <li>EXPERIENCE</li>
+            </a>
+            <a href="#works_container">
+                <li>WORKS</li>
+            </a>
+            <a href="#skill_container">
+                <li>SKILL</li>
+            </a>
+        </ul>
+        <div id="home_container" class="home_container">
+            <div class="photo"></div>
+            <p>Hello ~</p>
+            <div class="text">about me</div>
+            <a href="#experience_container">
+                <div class="experience">experience</div>
+            </a>
+            <a href="#works_container">
+                <div class="works">works</div>
+            </a>
+            <a href="#skill_container">
+                <div class="skill">skill</div>
+            </a>
+        </div>
+    </div>
+    <div id="experience_container" class="experience_container">
+        <div class="title">經歷</div>
+        <div class="border"></div>
+        <div class="text_container">
+            <div class="highschool">國立東勢高工－電子科</div>
+            <div class="college">樹德科技大學－電腦與通訊系</div>
+            <div class="training">職業訓練中心－ＲＷＤ前端工程師課程</div>
+        </div>
+    </div>
+    <div id="works_container" class="works_container">
+        <div class="title">作品</div>
+        <div class="border"></div>
+        <div class="swiper">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"
+                        style="background-image:url(https://swiperjs.com/demos/images/nature-1.jpg)"></div>
+                    <div class="swiper-slide"
+                        style="background-image:url(https://swiperjs.com/demos/images/nature-2.jpg)"></div>
+                    <div class="swiper-slide"
+                        style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)"></div>
+                    <div class="swiper-slide"
+                        style="background-image:url(https://swiperjs.com/demos/images/nature-4.jpg)"></div>
+                    <div class="swiper-slide"
+                        style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)"></div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div id="skill_container" class="skill_container">
+        <div class="title">技能</div>
+        <div class="border"></div>
+        <div class="design">
+            <div class="design_pic">設計</div>
+            <div class="design_container">
+                <div class="ps"></div>
+                <div class="pstext connectiontext">Photoshop</div>
+                <div class="ai"></div>
+                <div class="aitext connectiontext">Illustrator</div>
+            </div>
+        </div>
+        <div class="program">
+            <div class="program_border"></div>
+            <div class="program_pic">程式</div>
+            <div class="program_container">
+                <div class="css"></div>
+                <div class="csstext connectiontext">CSS3</div>
+                <div class="jq"></div>
+                <div class="jqtext connectiontext">jQuery</div>
+                <div class="bootstrap"></div>
+                <div class="bootstraptext connectiontext">Bootstrap</div>
+                <div class="js"></div>
+                <div class="jstext connectiontext">JavaScript</div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="connection">
+            <a href="https://www.facebook.com/profile.php?id=100000363472684">
+                <div class="fb"></div>
+            </a>
+            <div class="fbtext connectiontext">FB : 紀鑑倫</div>
+            <a href="https://www.instagram.com/ju850315/">
+                <div class="ig"></div>
+            </a>
+            <div class="igtext connectiontext">IG : Ju850315</div>
+            <div class="line"></div>
+            <div class="linetext connectiontext">LINE : jijianlun</div>
+            <div class="phone"></div>
+            <div class="phonetext connectiontext">TEL : 0938770203</div>
+        </div>
+        <a href="#home_container">
+            <div class="top"></div>
+        </a>
+        © 2020 by Julian
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            loop: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
