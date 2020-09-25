@@ -118,6 +118,21 @@
             line-height: 138px;
         }
 
+        @keyframes experience {
+            50% {
+                transform: translateY(-20px);
+            }
+
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .experience:hover {
+            animation: experience 0.7s 1;
+        }
+
         .home_container .works {
             height: 138px;
             width: 138px;
@@ -132,6 +147,10 @@
             line-height: 138px;
         }
 
+        .works:hover {
+            animation: experience 0.7s 1;
+        }
+
         .home_container .skill {
             height: 138px;
             width: 138px;
@@ -144,6 +163,10 @@
             color: whitesmoke;
             text-align: center;
             line-height: 138px;
+        }
+
+        .skill:hover {
+            animation: experience 0.7s 1;
         }
 
         .border {
@@ -201,7 +224,12 @@
 
         .swiper {
             position: relative;
-            top: 300px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1000px;
+            height: 600px;
+
         }
 
         .swiper-container {
@@ -219,7 +247,7 @@
         .swiper-pagination {
             position: relative;
             float: left;
-            top: 25px;
+            top: 50px;
             left: 50%;
             transform: translateX(-45%);
         }
@@ -229,10 +257,21 @@
             height: 15px;
             border-radius: 50%;
             margin-right: 30px;
+            outline: none;
         }
 
         .swiper-pagination-bullet-active {
             background: rgb(235, 111, 111);
+        }
+
+        .swiper-button-next {
+
+            outline: none;
+        }
+
+        .swiper-button-prev {
+
+            outline: none;
         }
 
         /* 技能內容物 */
@@ -595,9 +634,12 @@
         <div class="title">經歷</div>
         <div class="border"></div>
         <div class="text_container">
-            <div class="highschool">國立東勢高工－電子科 <p style="text-align:right">2013~2016</p></div>
-            <div class="college">樹德科技大學－電腦與通訊系<p style="text-align:right">2016~2020</p></div>
-            <div class="training">職業訓練中心－ＲＷＤ前端工程師課程<p style="text-align:right">2020</p></div>
+            <div class="highschool">國立東勢高工－電子科 <p style="text-align:right">2013~2016</p>
+            </div>
+            <div class="college">樹德科技大學－電腦與通訊系<p style="text-align:right">2016~2020</p>
+            </div>
+            <div class="training">職業訓練中心－ＲＷＤ前端工程師課程<p style="text-align:right">2020</p>
+            </div>
         </div>
     </div>
     <div id="works_container" class="works_container">
@@ -616,7 +658,11 @@
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
+    </div>
     </div>
     <div id="skill_container" class="skill_container">
         <div class="title">技能</div>
@@ -671,17 +717,16 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-            effect: 'cube',
-            grabCursor: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
             loop: true,
-            cubeEffect: {
-                shadow: true,
-                slideShadows: true,
-                shadowOffset: 20,
-                shadowScale: 0.94,
-            },
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
     </script>
