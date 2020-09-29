@@ -15,13 +15,14 @@
             scroll-behavior: smooth;
 
         }
+
         /* 首頁固定內容 */
         .home {
             width: 100%;
             height: 100vh;
-            background-image: url(./img/背景3.jpg);
+            background-image: url(./img/主頁1.jpg);
             background-repeat: no-repeat;
-            background-size:cover;
+            background-size: cover;
             display: table;
             background-attachment: fixed;
         }
@@ -43,7 +44,8 @@
             float: left;
             color: #FFFFFF;
         }
-      /* 首頁內容物 */
+
+        /* 首頁內容物 */
         .home_container .text {
             position: relative;
             float: left;
@@ -118,7 +120,7 @@
             height: 138px;
             width: 138px;
             border-radius: 50%;
-            background-color:#ACABA2;
+            background-color: #ACABA2;
             position: absolute;
             top: 545px;
             left: 1350px;
@@ -146,70 +148,79 @@
         .experience_container {
             width: 100%;
             height: 100vh;
-            background-image: url(./img/關於3.png);
+            background-image: url(./img/關於5.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        .experience_container h1{
+
+        .experience_container h1 {
             text-align: center;
             position: relative;
             top: 50px;
             color: #FFFFFF;
         }
-        .experience_container .time_pic{
+
+        .experience_container .time_pic {
             width: 60px;
-            height: 500px;
+            height: 600px;
             position: relative;
             float: left;
             background-image: url(./img/時間條.png);
             background-size: contain;
             background-repeat: no-repeat;
             left: 925px;
-            top: 100px;
-        }
-        .experience_container .highschool{
-            position: relative;
-            float: left;
-            width: 250px;
-            height: 200px;
-            left: 1100px;
             top: 120px;
         }
-        .experience_container .college{
+
+        .experience_container .highschool {
             position: relative;
             float: left;
             width: 300px;
             height: 200px;
-            left: 150px;
-            top: 340px;
+            left: 1100px;
+            top: 120px;
+        }
+
+        .experience_container .college {
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 200px;
+            left: 100px;
+            top: 310px;
             text-align: right;
         }
-        .experience_container .college .text{
+
+        .experience_container .college .text {
             text-align: left;
         }
-       
-        .experience_container .training{
+
+        .experience_container .training {
             position: relative;
             float: left;
             width: 550px;
             height: 200px;
-            left: 550px;
-            top: 540px;
+            left: 510px;
+            top: 500px;
         }
-        .experience_container .text{
+
+        .experience_container .text {
             color: white;
             font-size: 21px;
         }
-        .experience_container .school{
+
+        .experience_container .school {
             color: white;
             font-size: 30px;
         }
-        .experience_container .department{
+
+        .experience_container .department {
             color: white;
             font-size: 28px;
         }
-        .experience_container .time{
+
+        .experience_container .time {
             color: #06CD49;
             font-size: 25px;
         }
@@ -264,7 +275,7 @@
             top: 50px;
             left: 50%;
             transform: translateX(-45%);
-            
+
         }
 
         .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -273,7 +284,7 @@
             border-radius: 50%;
             margin-right: 30px;
             outline: none;
-            
+
         }
 
         .swiper-pagination-bullet-active {
@@ -293,185 +304,99 @@
         /* 技能內容物 */
         .skill_container {
             width: 100%;
-            height: 937px;
-            background-color: #6F7A8A;
-            background-image: url(./img/技能背景.jpg);
+            height: 100vh;
+            background-image: url(./img/技能1.jpg);
             background-size: cover;
+            background-attachment: fixed;
         }
 
-        .skill_container .title {
-            position: relative;
-            float: left;
-            left: 430px;
-            top: 90px;
-            font-size: 72px;
-        }
-
-        /* 設計內容 */
-        .design {
-            width: 1000px;
-            height: 200px;
-            position: relative;
-            top: 220px;
-            left: 435px;
-        }
-
-        .design_pic {
-            width: 80px;
-            height: 80px;
-            background-color: #E83556;
-            border-radius: 50%;
-            float: left;
-            line-height: 80px;
-            font-size: 25px;
-            color: whitesmoke;
+        .skill_container H1 {
             text-align: center;
             position: relative;
-            left: 300px;
+            top: 50px;
+            color: white;
         }
 
-        .design_container {
-            width: 1000px;
-            height: 100px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        .design .ps {
-            width: 100px;
-            height: 100px;
-            background-image: url(./img/photoshop.png);
-            background-size: cover;
-            background-position: center;
-        }
-        .ps:hover {
-            animation: fb 1s 2;
-        }
-
-
-        .design .ai {
-            width: 100px;
-            height: 100px;
-            background-image: url(./img/illustrator.png);
-            background-size: cover;
-            background-position: center;
-        }
-        .ai:hover {
-            animation: fb 1s 2;
-        }
-
-
-        .design_container .connectiontext {
-            font-size: 30px;
-        }
-
-        /* 程式內容 */
-        .program {
-            width: 1000px;
-            position: relative;
-            top: 250px;
-            left: 435px;
-        }
-
-        .program_border {
-            border: solid 1px black;
-            margin-bottom: 10px;
-        }
-
-        .program_pic {
-            width: 80px;
-            height: 80px;
-            background-color: #ffffff;
-            border-radius: 50%;
-            float: left;
-            line-height: 80px;
-            font-size: 30px;
-            color: black;
+        .skill_container H2 {
             text-align: center;
             position: relative;
+            top: 80px;
+            color: white;
+        }
+        .skill_container .opacity{
+            position: relative;
+            width: 1000px;
+            height: 500px;
+            background-color: rgb(78, 78, 78);
+            bottom: 360px;
             left: 450px;
+            opacity: 50%;
         }
 
-        .program_container {
+        .skill_container .skill_box {
             width: 1000px;
-            height: 100px;
+            height: 500px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-40%);
+            top: 150px;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: 99;
         }
 
-        .program .css {
-            width: 100px;
-            height: 100px;
-            margin-left: 100px;
-            margin-right: 150px;
-            background-image: url(./img/css.png);
-            background-size: cover;
-            background-position: center;
-        }
-        .css:hover {
-            animation: fb 1s 2;
+        .skill_container .skill_box .text {
+            font-size: 18px;
+            margin-left: 30px;
+            color: #ffffff;
         }
 
-
-        .program .jq {
-            width: 100px;
-            height: 100px;
-            margin-right: 120px;
-            margin-left: 100px;
-            background-image: url(./img/JQ.png);
-            background-size: cover;
-            background-position: center;
+        .skill_container .skill_box .pic75 {
+            background-image: url(./img/能力75.png);
+            position: relative;
+            background-size: contain;
+            left: 130px;
+            bottom: 18px;
+            width: 400px;
+            height: 12px;
         }
-        .jq:hover {
-            animation: fb 1s 2;
+        .skill_container .skill_box .pic90 {
+            background-image: url(./img/能力90.png);
+            position: relative;
+            background-size: contain;
+            left: 130px;
+            bottom: 18px;
+            width: 600px;
+            height: 12px;
         }
-
-
-        .program .bootstrap {
-            width: 100px;
-            height: 100px;
-            margin-top: 50px;
-            margin-right: 110px;
-            margin-left: 100px;
-            background-image: url(./img/bootstrap.png);
-            background-size: cover;
-            background-position: center;
+        .skill_container .skill_box .pic80 {
+            background-image: url(./img/能力80.png);
+            position: relative;
+            background-size: contain;
+            left: 130px;
+            bottom: 18px;
+            width: 500px;
+            height: 12px;
         }
-        .bootstrap:hover {
-            animation: fb 1s 2;
+        .skill_container .skill_box .value75{
+            position: relative;
+            float: left;
+            bottom: 35px;
+            left: 550px;
         }
-
-        .program .js {
-            width: 100px;
-            height: 100px;
-            margin-top: 50px;
-            margin-right: 100px;
-            margin-left: 80px;
-            background-image: url(./img/JS.png);
-            background-size: cover;
-            background-position: center;
+        .skill_container .skill_box .value90{
+            position: relative;
+            float: left;
+            bottom: 35px;
+            left: 750px;
         }
-        .js:hover {
-            animation: fb 1s 2;
+        .skill_container .skill_box .value80{
+            position: relative;
+            float: left;
+            bottom: 35px;
+            left: 650px;
         }
-
-        .program .connectiontext {
-            margin-right: 50px;
-            font-size: 30px;
-        }
-
-        .bootstraptext {
-            margin-top: 50px;
-        }
-
-        .jstext {
-            margin-top: 50px;
-        }
-
-
         /* 頁尾 */
         .bottom {
             width: 100%;
@@ -525,10 +450,10 @@
         .ig {
             height: 45px;
             width: 45px;
-            /* border-radius: 50%; */
             background-image: url(./img/ig.png);
             background-size: cover;
         }
+
         .ig:hover {
             animation: swing 1s 2;
         }
@@ -590,6 +515,7 @@
             background-image: url(./img/top.png);
             background-size: cover;
         }
+
         @keyframes top {
 
             50% {
@@ -619,7 +545,7 @@
                 <div class="experience">關於我</div>
             </a>
             <a href="#skill_container">
-                <div class="skill">技能</div>
+                <div class="skill">專長</div>
             </a>
             <a href="#works_container">
                 <div class="works">作品</div>
@@ -642,12 +568,31 @@
             <div class="text">大學四年期間，學習更多的專業但其中還是以寫程式最得心應手並且在求學之間，額外進修程式如：python，java...等程式語言</div>
         </div>
         <div class="training">
-            <div class="time">2013~2016</div>
+            <div class="time">2020/2~5</div>
             <div class="school">職訓－RWD前端工程師課程</div>
             <div class="text">求學階段結束後，就馬上去服兵役
                 並在退伍後，幸運得知有前端工程師的職訓課程<br>
                 在職訓的過程中，從設計一路到程式，每個環節都很新鮮但對非本科的我相對吃力，但我喜歡挑戰，並且在結訓後與自己的小組完成第一份自己設計及程式的專題</div>
         </div>
+    </div>
+    <div id="skill_container" class="skill_container">
+        <h1>專長</h1>
+        <h2>我的專業能力</h2>
+        <div class="skill_box">
+            <div class="ps text">Photoshop <div class="pic75"></div><div class="value75">75%</div>
+            </div>
+            <div class="ai text">Illustrator<div class="pic90"></div><div class="value90">90%</div>
+            </div>
+            <div class="css3 text">CSS3<div class="pic80"></div><div class="value80">80%</div>
+            </div>
+            <div class="bs text">Bootstrap<div class="pic75"></div><div class="value75">75%</div>
+            </div>
+            <div class="jq text">jQuery<div class="pic75"></div><div class="value75">75%</div>
+            </div>
+            <div class="js text">JavaScript<div class="pic80"></div><div class="value80">80%</div>
+            </div>
+        </div>
+        <div class="opacity"></div>
     </div>
     <div id="works_container" class="works_container">
         <div class="title">設計作品</div>
@@ -670,34 +615,6 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-    </div>
-    <div id="skill_container" class="skill_container">
-        <div class="title">技能</div>
-        <div class="border"></div>
-        <div class="design">
-            <div class="design_pic">設計</div>
-            <div class="design_container">
-                <div class="ps"></div>
-                <div class="pstext connectiontext" style="color: #FFFFFF;">Photoshop</div>
-                <div class="ai"></div>
-                <div class="aitext connectiontext" style="color: #FFFFFF;">Illustrator</div>
-            </div>
-        </div>
-        <div class="program">
-            <div class="program_border"></div>
-            <div class="program_pic">程式</div>
-            <div class="program_container">
-                <div class="css"></div>
-                <div class="csstext connectiontext" style="color: #FFFFFF;">CSS3</div>
-                <div class="jq"></div>
-                <div class="jqtext connectiontext" style="color: #FFFFFF;">jQuery</div>
-                <div class="bootstrap"></div>
-                <div class="bootstraptext connectiontext" style="color: #FFFFFF;">Bootstrap</div>
-                <div class="js"></div>
-                <div class="jstext connectiontext" style="color: #FFFFFF;">JavaScript</div>
-            </div>
-        </div>
-    </div>
     <div class="bottom">
         <div class="connection">
             <a href="https://www.facebook.com/profile.php?id=100000363472684">
@@ -707,11 +624,11 @@
             <a href="https://www.instagram.com/ju850315/">
                 <div class="ig"></div>
             </a>
-            <div class="igtext connectiontext"style="color: #FFFFFF;">IG : Ju850315</div>
+            <div class="igtext connectiontext" style="color: #FFFFFF;">IG : Ju850315</div>
             <div class="line"></div>
-            <div class="linetext connectiontext"style="color: #FFFFFF;">LINE : jijianlun</div>
+            <div class="linetext connectiontext" style="color: #FFFFFF;">LINE : ji_jian_lun</div>
             <div class="phone"></div>
-            <div class="phonetext connectiontext"style="color: #FFFFFF;">TEL : 0938770203</div>
+            <div class="phonetext connectiontext" style="color: #FFFFFF;">TEL : 0938-770203</div>
         </div>
         <a href="#home_container">
             <div class="top"></div>
