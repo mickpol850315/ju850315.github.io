@@ -13,14 +13,12 @@
             margin: 0;
             font-family: "微軟正黑體";
             scroll-behavior: smooth;
-            color: #FFFFFF;
 
         }
         /* 首頁固定內容 */
         .home {
             width: 100%;
-            height: 937px;
-            background-color: #6F7A8A;
+            height: 100vh;
             background-image: url(./img/背景3.jpg);
             background-repeat: no-repeat;
             background-size:cover;
@@ -43,6 +41,7 @@
             top: 195px;
             font-size: 36px;
             float: left;
+            color: #FFFFFF;
         }
       /* 首頁內容物 */
         .home_container .text {
@@ -61,7 +60,7 @@
             height: 376px;
             width: 376px;
             border-radius: 50%;
-            background-image: url(./img/1.jpg);
+            background-image: url(./img/2.jpg);
             background-size: cover;
             position: absolute;
             left: 430px;
@@ -72,7 +71,7 @@
             height: 138px;
             width: 138px;
             border-radius: 50%;
-            background-color: #E83556;
+            background-color: #954635;
             position: absolute;
             top: 545px;
             left: 950px;
@@ -97,11 +96,11 @@
             animation: experience 0.7s 1;
         }
 
-        .home_container .works {
+        .home_container .skill {
             height: 138px;
             width: 138px;
             border-radius: 50%;
-            background-color: #61D0D4;
+            background-color: rgb(138, 112, 99);
             position: absolute;
             top: 545px;
             left: 1150px;
@@ -115,11 +114,11 @@
             animation: experience 0.7s 1;
         }
 
-        .home_container .skill {
+        .home_container .works {
             height: 138px;
             width: 138px;
             border-radius: 50%;
-            background-color: #D1C926;
+            background-color:#ACABA2;
             position: absolute;
             top: 545px;
             left: 1350px;
@@ -146,29 +145,73 @@
         /* 經驗內容物 */
         .experience_container {
             width: 100%;
-            height: 937px;
-            background-color:#584E45;
+            height: 100vh;
+            background-image: url(./img/關於3.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
-
-        .experience_container .title {
+        .experience_container h1{
+            text-align: center;
+            position: relative;
+            top: 50px;
+            color: #FFFFFF;
+        }
+        .experience_container .time_pic{
+            width: 60px;
+            height: 500px;
             position: relative;
             float: left;
-            left: 430px;
-            top: 90px;
-            font-size: 72px;
+            background-image: url(./img/時間條.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 925px;
+            top: 100px;
         }
-
-        .text_container {
-            width: 1000px;
-            height: 300px;
+        .experience_container .highschool{
             position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-65%, -60%);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            float: left;
+            width: 250px;
+            height: 200px;
+            left: 1100px;
+            top: 120px;
+        }
+        .experience_container .college{
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 200px;
+            left: 150px;
+            top: 340px;
+            text-align: right;
+        }
+        .experience_container .college .text{
+            text-align: left;
+        }
+       
+        .experience_container .training{
+            position: relative;
+            float: left;
+            width: 550px;
+            height: 200px;
+            left: 550px;
+            top: 540px;
+        }
+        .experience_container .text{
+            color: white;
+            font-size: 21px;
+        }
+        .experience_container .school{
+            color: white;
             font-size: 30px;
+        }
+        .experience_container .department{
+            color: white;
+            font-size: 28px;
+        }
+        .experience_container .time{
+            color: #06CD49;
+            font-size: 25px;
         }
 
         /* 作品內容物 */
@@ -221,6 +264,7 @@
             top: 50px;
             left: 50%;
             transform: translateX(-45%);
+            
         }
 
         .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -229,10 +273,11 @@
             border-radius: 50%;
             margin-right: 30px;
             outline: none;
+            
         }
 
         .swiper-pagination-bullet-active {
-            background: rgb(235, 111, 111);
+            background: rgb(209, 209, 209);
         }
 
         .swiper-button-next {
@@ -250,6 +295,8 @@
             width: 100%;
             height: 937px;
             background-color: #6F7A8A;
+            background-image: url(./img/技能背景.jpg);
+            background-size: cover;
         }
 
         .skill_container .title {
@@ -567,26 +614,39 @@
         <h2>前端工程師 / 網頁設計師</h2>
         <div id="home_container" class="home_container">
             <div class="photo"></div>
-            <div class="text">嗨~<br>你好 ， 我是鑑倫！<br>一個充滿熱忱的前端新鮮人！</div>
+            <div class="text">嗨~<br>你好，我是鑑倫！<br>一個充滿熱忱的前端新鮮人</div>
             <a href="#experience_container">
-                <div class="experience">experience</div>
-            </a>
-            <a href="#works_container">
-                <div class="works">works</div>
+                <div class="experience">關於我</div>
             </a>
             <a href="#skill_container">
-                <div class="skill">skill</div>
+                <div class="skill">技能</div>
+            </a>
+            <a href="#works_container">
+                <div class="works">作品</div>
             </a>
         </div>
     </div>
     <div id="experience_container" class="experience_container">
-        <div class="title">自傳</div>
-        <div class="border"></div>
-        <div class="time_container"></div>
-        <div class="text_container">
-            <div class="highschool">國立東勢高工－電子科 </div>
-            <div class="college">樹德科技大學－電腦與通訊系 </div>
-            <div class="training">職業訓練中心－ＲＷＤ前端工程師課程 </div>
+        <h1>關於我</h1>
+        <div class="time_pic"></div>
+        <div class="highschool">
+            <div class="time">2013~2016</div>
+            <div class="school">國立東勢高工</div>
+            <div class="department">電子科</div>
+            <div class="text">高職三年，因為電子與程式的關聯開始接觸程式，進而往後的鑽研隨後考取丙級電子術士證照</div>
+        </div>
+        <div class="college">
+            <div class="time">2016~2019</div>
+            <div class="school">樹德科技大學</div>
+            <div class="department">電腦與通訊系</div>
+            <div class="text">大學四年期間，學習更多的專業但其中還是以寫程式最得心應手並且在求學之間，額外進修程式如：python，java...等程式語言</div>
+        </div>
+        <div class="training">
+            <div class="time">2013~2016</div>
+            <div class="school">職訓－RWD前端工程師課程</div>
+            <div class="text">求學階段結束後，就馬上去服兵役
+                並在退伍後，幸運得知有前端工程師的職訓課程<br>
+                在職訓的過程中，從設計一路到程式，每個環節都很新鮮但對非本科的我相對吃力，但我喜歡挑戰，並且在結訓後與自己的小組完成第一份自己設計及程式的專題</div>
         </div>
     </div>
     <div id="works_container" class="works_container">
