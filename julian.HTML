@@ -254,12 +254,12 @@
             background-position: center;
         }
 
-        .swiper-pagination {
-            background-color: rgb(255, 255, 255);
+        .swiper-container-horizontal>.swiper-pagination-progressbar {
+            background-color: rgba(232, 227, 227, 0.2);
         }
 
-        .swiper-pagination-bullet-active {
-            color: #52B54B
+        .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+            background-color:  #06CD49;
         }
 
         .swiper-button-next {
@@ -631,7 +631,7 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-            loop:true,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'progressbar',
