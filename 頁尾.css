@@ -1,0 +1,217 @@
+  /* 頁尾 */
+  .bottom {
+    width: 100%;
+    height: 115px;
+    background-color: #1e1f22;
+    position: fixed;
+    line-height: 115px;
+    bottom: 0;
+    z-index: 999;
+    color: white;
+}
+
+.connection {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    top: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fb {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-image: url(./img/fb.png);
+    background-size: cover;
+}
+
+@keyframes fb {
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.fb:hover {
+    animation: swing 1s 2;
+}
+
+.ig {
+    height: 45px;
+    width: 45px;
+    background-image: url(./img/ig.png);
+    background-size: cover;
+}
+
+.ig:hover {
+    animation: swing 1s 2;
+}
+
+.line {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url(./img/line.png);
+    background-size: cover;
+}
+
+.line:hover {
+    animation: swing 1.2s 2;
+}
+
+.phone {
+    height: 45px;
+    width: 45px;
+    background-image: url(./img/phone.png);
+    background-size: cover;
+}
+
+@keyframes swing {
+    25% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(-25deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.phone:hover {
+    animation: swing 1.2s 2;
+}
+
+.connectiontext {
+    line-height: 45px;
+    font-size: 18px;
+    color: rgb(252, 246, 246);
+}
+
+.top {
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 100px;
+    height: 100px;
+    background-image: url(./img/top.png);
+    background-size: cover;
+}
+
+@keyframes top {
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.top:hover {
+    animation: top 1s 2;
+}
+
+/* 手機板 iphone X */
+@media screen and (max-width: 375px){
+    .bottom {
+        width: 100%;
+        height: 150px;
+        background-color: #1e1f22;
+        position: relative;
+        line-height: 0px;
+        top:0;
+        z-index: 1;
+        font-size: 5px;
+    }
+    
+    .connection {
+        width: 40%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .fb {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        background-image: url(./img/fb.png);
+        background-size: cover;
+        margin-right: 15px;
+    }
+    
+    
+    .ig {
+        height: 35px;
+        width: 35px;
+        background-image: url(./img/ig.png);
+        background-size: cover;
+        margin-right: 15px;
+    }
+        
+    .line {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        background-size: cover;
+        background-image: url(./img/line.png);
+        background-size: cover;
+        margin-right: 10px;
+    }
+    
+    .phone {
+        height: 35px;
+        width: 35px;
+        background-image: url(./img/phone.png);
+        background-size: cover;
+        margin-right: 2px;
+    }
+
+    
+    .connectiontext {
+        line-height: 35px;
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+        margin-right: 10px;
+    }
+    
+    .top {
+        position: absolute;
+        right: 0;
+        top: 15%;
+        width: 100px;
+        height: 100px;
+        background-image: url(./img/top.png);
+        background-size: cover;
+        display: none;
+    }
+
+}

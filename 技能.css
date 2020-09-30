@@ -1,0 +1,195 @@
+  /* 技能內容物 */
+  .skill_container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/技能1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.skill_container H1 {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    color: white;
+}
+
+.skill_container H2 {
+    text-align: center;
+    position: relative;
+    top: 90px;
+    color: rgb(255, 255, 255);
+}
+
+.skill_container .opacity {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(78, 78, 78);
+    bottom: 360px;
+    left: 450px;
+    opacity: 50%;
+}
+
+.skill_container .skill_box {
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-40%);
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 99;
+}
+
+.skill_container .skill_box .text {
+    font-size: 18px;
+    margin-left: 30px;
+    color: #ffffff;
+}
+
+.skill_container .skill_box .pic75 {
+    background-image: url(./img/能力75.png);
+    position: relative;
+    background-size: contain;
+    left: 130px;
+    bottom: 18px;
+    width: 400px;
+    height: 12px;
+}
+
+.skill_container .skill_box .pic90 {
+    background-image: url(./img/能力90.png);
+    position: relative;
+    background-size: contain;
+    left: 130px;
+    bottom: 18px;
+    width: 600px;
+    height: 12px;
+}
+
+.skill_container .skill_box .pic80 {
+    background-image: url(./img/能力80.png);
+    position: relative;
+    background-size: contain;
+    left: 130px;
+    bottom: 18px;
+    width: 500px;
+    height: 12px;
+}
+
+.skill_container .skill_box .value75 {
+    position: relative;
+    float: left;
+    bottom: 35px;
+    left: 550px;
+}
+
+.skill_container .skill_box .value90 {
+    position: relative;
+    float: left;
+    bottom: 35px;
+    left: 750px;
+}
+
+.skill_container .skill_box .value80 {
+    position: relative;
+    float: left;
+    bottom: 35px;
+    left: 650px;
+}
+
+/* 手機板 iphone X */
+@media screen and (max-width: 375px){
+    .skill_container {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./img/技能1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: right;
+    }  
+    .skill_container .opacity {
+        position: relative;
+        width: 1000px;
+        height: 500px;
+        background-color: rgb(78, 78, 78);
+        bottom: 360px;
+        left: 450px;
+        opacity: 50%;
+        display: none;
+    }
+    
+    .skill_container .skill_box {
+        width: 100px;
+        height: 500px;
+        position: relative;
+        left: 0%;
+        transform: translateX(0%);
+        top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 99;
+    }
+    
+    .skill_container .skill_box .text {
+        font-size: 15px;
+        margin-left: 10px;
+        color: #ffffff;
+    }
+    
+    .skill_container .skill_box .pic75 {
+        background-image: url(./img/能力75.png);
+        position: relative;
+        background-size: contain;
+        left: 130px;
+        bottom: 18px;
+        width: 100px;
+        height: 12px;
+    }
+    
+    .skill_container .skill_box .pic90 {
+        background-image: url(./img/能力90.png);
+        position: relative;
+        background-size: contain;
+        left: 130px;
+        bottom: 18px;
+        width: 180px;
+        height: 12px;
+    }
+    
+    .skill_container .skill_box .pic80 {
+        background-image: url(./img/能力80.png);
+        position: relative;
+        background-size: contain;
+        left: 130px;
+        bottom: 18px;
+        width: 145px;
+        height: 12px;
+    }
+    
+    .skill_container .skill_box .value75 {
+        position: relative;
+        float: left;
+        bottom: 35px;
+        left: 250px;
+    }
+    
+    .skill_container .skill_box .value90 {
+        position: relative;
+        float: left;
+        bottom: 35px;
+        left: 320px;
+    }
+    
+    .skill_container .skill_box .value80 {
+        position: relative;
+        float: left;
+        bottom: 35px;
+        left: 300px;
+    }
+
+}
