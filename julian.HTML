@@ -206,7 +206,7 @@
         }
 
         .experience_container .text {
-            color: rgb(204, 156, 156);
+            color: rgb(218, 218, 218);
             font-size: 21px;
         }
 
@@ -215,6 +215,7 @@
             font-size: 30px;
             margin-bottom: 10px;
         }
+
         .experience_container .time {
             color: #06CD49;
             font-size: 25px;
@@ -223,75 +224,59 @@
 
         /* 作品內容物 */
         .works_container {
+            position: relative;
             width: 100%;
             height: 100vh;
-            background-image: url(./img/);
+            background-image: url(./img/作品1.jpg);
             background-size: cover;
+            background-attachment: fixed;
         }
 
-        .works_container .title {
+        .works_container h1 {
             position: relative;
-            float: left;
-            left: 430px;
-            top: 90px;
-            font-size: 72px;
-        }
-
-        .works_container .border {
-            left: 150px;
-        }
-
-        .swiper {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 1000px;
-            height: 600px;
-
+            color: #FFFFFF;
+            text-align: center;
+            top: 50px;
         }
 
         .swiper-container {
-            width: 1000px;
-            height: 400px;
             position: relative;
+            align-items: center;
+            top: 80px;
+            width: 50%;
+            height: 70vh;
         }
 
         .swiper-slide {
-            background-position: center;
+            margin-top: 40px;
             background-size: contain;
             background-repeat: no-repeat;
+            background-position: center;
         }
 
         .swiper-pagination {
-            position: relative;
-            float: left;
-            top: 50px;
-            left: 50%;
-            transform: translateX(-45%);
-
-        }
-
-        .swiper-pagination-bullets .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            margin-right: 30px;
-            outline: none;
-
+            background-color: rgb(255, 255, 255);
         }
 
         .swiper-pagination-bullet-active {
-            background: rgb(209, 209, 209);
+            color: #52B54B
         }
 
         .swiper-button-next {
-            color: #FFFFFF;
+            position: relative;
+            float: right;
+            top: -200px;
+            right: 420px;
+            color: white;
             outline: none;
         }
 
         .swiper-button-prev {
-            color: #FFFFFF;
+            position: relative;
+            float: left;
+            top: -190px;
+            left: 410px;
+            color: white;
             outline: none;
         }
 
@@ -314,8 +299,8 @@
         .skill_container H2 {
             text-align: center;
             position: relative;
-            top: 80px;
-            color: white;
+            top: 90px;
+            color: rgb(255, 255, 255);
         }
 
         .skill_container .opacity {
@@ -578,7 +563,7 @@
     </div>
     <div id="skill_container" class="skill_container">
         <h1>專長</h1>
-        <h2>我的專業能力</h2>
+        <h2>專業能力</h2>
         <div class="skill_box">
             <div class="ps text">Photoshop <div class="pic75"></div>
                 <div class="value75">75%</div>
@@ -602,24 +587,23 @@
         <div class="opacity"></div>
     </div>
     <div id="works_container" class="works_container">
-        <div class="title">設計作品</div>
-        <div class="swiper">
-            <!-- Swiper -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(./img/菜單.jpg);"></div>
-                    <div class="swiper-slide" style="background-image:url(./img/霸子.jpg);"></div>
-                    <div class="swiper-slide" style="background-image:url(./img/透視.JPG);"></div>
-                    <div class="swiper-slide" style="background-image:url(./img/口紅.JPG);"></div>
-                    <div class="swiper-slide" style="background-image:url(./img/室內設計.JPG);"></div>
-                </div>
+        <h1>設計作品</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(./img/團體專題海報.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(./img/菜單.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(./img/聚光燈.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(./img/聯絡.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(./img/霸子.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(./img/口紅.JPG);"></div>
+                <div class="swiper-slide" style="background-image: url(./img/透視.JPG);"></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
     <div class="bottom">
         <div class="connection">
@@ -647,12 +631,10 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
+            loop:true,
             pagination: {
                 el: '.swiper-pagination',
-                clickable: true,
+                type: 'progressbar',
             },
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -660,9 +642,5 @@
             },
         });
     </script>
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <!-- 卷軸事件JS -->
-</body>
 
 </html>
