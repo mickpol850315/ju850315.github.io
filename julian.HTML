@@ -148,10 +148,19 @@
         .experience_container {
             width: 100%;
             height: 100vh;
-            background-image: url(./img/關於5.jpg);
+            background-image: url(./img/經驗1.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+        }
+        .experience_container .opacity{
+            position: relative;
+            width: 1500px;
+            height: 800px;
+            background-color: rgb(78, 78, 78);
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 50%;
         }
 
         .experience_container h1 {
@@ -159,6 +168,7 @@
             position: relative;
             top: 50px;
             color: #FFFFFF;
+            z-index: 99;
         }
 
         .experience_container .time_pic {
@@ -171,6 +181,7 @@
             background-repeat: no-repeat;
             left: 925px;
             top: 120px;
+            z-index: 99;
         }
 
         .experience_container .highschool {
@@ -180,6 +191,7 @@
             height: 200px;
             left: 1060px;
             top: 120px;
+            z-index: 99;
         }
 
         .experience_container .college {
@@ -190,6 +202,7 @@
             left: 40px;
             top: 310px;
             text-align: right;
+            z-index: 99;
         }
 
         .experience_container .college .text {
@@ -203,10 +216,11 @@
             height: 200px;
             left: 370px;
             top: 500px;
+            z-index: 99;
         }
 
         .experience_container .text {
-            color: rgb(218, 218, 218);
+            color: rgb(236, 236, 236);
             font-size: 21px;
         }
 
@@ -560,6 +574,7 @@
                 並在退伍後，幸運得知有前端工程師的職訓課程<br>
                 在職訓的過程中，從設計一路到程式，每個環節都很新鮮但對非本科的我相對吃力，但我喜歡挑戰，並且在結訓後與自己的小組完成第一份自己設計及程式的專題</div>
         </div>
+        <div class="opacity"></div>
     </div>
     <div id="skill_container" class="skill_container">
         <h1>專長</h1>
