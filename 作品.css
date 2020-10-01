@@ -14,19 +14,11 @@
     text-align: center;
     top: 50px;
 }
-.swiper{
-    position: relative;
-    width: 50%;
-    height: 60%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
 .swiper-container {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 70%;
+    top: 10%;
 }
 
 .swiper-slide {
@@ -44,70 +36,41 @@
 }
 
 .swiper-button-next {
-    position: relative;
-    float: right;
-    top:-50%;
+    position: absolute;
+    top:50%;
     color: white;
     outline: none;
 }
 
 .swiper-button-prev {
-    position: relative;
-    float: left;
-    top: -50%;
+    position: absolute;
+    top: 50%;
     color: white;
     outline: none;
 }
 
 /* 手機板 iphone X */
 @media screen and (max-width: 375px){
-    .works_container h1 {
-        position: relative;
-        color: #FFFFFF;
-        text-align: center;
-        top: 100px;
-    }
-    
     .swiper-container {
         position: relative;
-        align-items: center;
-        top: 130px;
-        width: 50%;
-        height: 50vh;
+        width: 80%;
+        height: 40%;
+        top: 25%;
     }
     
     .swiper-slide {
-        margin-top: 0px;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
     }
-    
-    .swiper-container-horizontal>.swiper-pagination-progressbar {
-        background-color: rgba(232, 227, 227, 0.2);
-    }
-    
-    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-        background-color:  #06CD49;
-    }
-    
     .swiper-button-next {
-        position: relative;
-        float: right;
-        width: 10px;
-        top: -74px;
-        right: 20px;
-        color: white;
-        outline: none;
+        position: absolute;
+        top:50%;
+        right: 0%;
     }
     
     .swiper-button-prev {
-        position: relative;
-        float: left;
-        width: 10px;
-        top: -70px;
-        left: 20px;
-        color: white;
-        outline: none;
+        position: absolute;
+        top: 50%;
+        left: 0%;
     }
 }
