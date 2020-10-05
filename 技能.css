@@ -100,7 +100,98 @@
     bottom: 35px;
     left: 650px;
 }
+/* 平板 ipad */
+@media screen and (max-width: 768px){
+    .skill_container {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./img/技能1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: right;
+    }  
+    .skill_container .opacity {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(78, 78, 78);
+        bottom: 360px;
+        left: 0px;
+        opacity: 50%;
+        /* display: none; */
+    }
+    
+    .skill_container .skill_box {
+        width: 100px;
+        height: 500px;
+        position: relative;
+        left: 0%;
+        transform: translateX(0%);
+        top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 99;
+    }
+    
+    .skill_container .skill_box .text {
+        font-size: 15px;
+        margin-left: 10px;
+        color: #ffffff;
+    }
+    
+    .skill_container .skill_box .pic75 {
+        background-image: url(./img/能力75.png);
+        position: relative;
+        background-size: contain;
+        left: 130px;
+        bottom: 18px;
+        width: 300px;
+        height: 12px;
+    }
+    
+    .skill_container .skill_box .pic90 {
+        background-image: url(./img/能力90.png);
+        position: relative;
+        background-size: contain;
+        left: 130px;
+        bottom: 18px;
+        width: 450px;
+        height: 12px;
+    }
+    
+    .skill_container .skill_box .pic80 {
+        background-image: url(./img/能力80.png);
+        position: relative;
+        background-size: contain;
+        left: 130px;
+        bottom: 18px;
+        width: 380px;
+        height: 12px;
+    }
+    
+    .skill_container .skill_box .value75 {
+        position: relative;
+        float: left;
+        bottom: 35px;
+        left: 440px;
+    }
+    
+    .skill_container .skill_box .value90 {
+        position: relative;
+        float: left;
+        bottom: 35px;
+        left: 590px;
+    }
+    
+    .skill_container .skill_box .value80 {
+        position: relative;
+        float: left;
+        bottom: 35px;
+        left: 520px;
+    }
 
+}
 /* 手機板 iphone X */
 @media screen and (max-width: 375px){
     .skill_container {

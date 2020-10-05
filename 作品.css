@@ -49,6 +49,34 @@
     outline: none;
 }
 
+/* 平板 ipad */
+@media screen and (max-width: 768px){
+    .swiper-container {
+        position: relative;
+        width: 80%;
+        height: 40%;
+        top: 25%;
+    }
+    
+    .swiper-slide {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .swiper-button-next {
+        position: absolute;
+        top:50%;
+        right: 0%;
+        display: none;
+    }
+    
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        display: none;
+    }
+}
+
 /* 手機板 iphone X */
 @media screen and (max-width: 375px){
     .swiper-container {

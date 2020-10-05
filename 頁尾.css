@@ -133,6 +133,87 @@
 .top:hover {
     animation: top 1s 2;
 }
+/* 平板 ipad */
+@media screen and (max-width: 768px){
+    .bottom {
+        width: 100%;
+        height: 150px;
+        background-color: #1e1f22;
+        position: relative;
+        line-height: 200px;
+        top:0;
+        z-index: 1;
+        font-size: 5px;
+    }
+    
+    .connection {
+        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .fb {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        background-image: url(./img/fb.png);
+        background-size: cover;
+        margin-right: 15px;
+    }
+    
+    
+    .ig {
+        height: 35px;
+        width: 35px;
+        background-image: url(./img/ig.png);
+        background-size: cover;
+        margin-right: 15px;
+    }
+        
+    .line {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        background-size: cover;
+        background-image: url(./img/line.png);
+        background-size: cover;
+        margin-right: 10px;
+    }
+    
+    .phone {
+        height: 35px;
+        width: 35px;
+        background-image: url(./img/phone.png);
+        background-size: cover;
+        margin-right: 2px;
+    }
+
+    
+    .connectiontext {
+        line-height: 35px;
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+        margin-right: 10px;
+    }
+    
+    .top {
+        position: absolute;
+        right: 0;
+        top: 15%;
+        width: 100px;
+        height: 100px;
+        background-image: url(./img/top.png);
+        background-size: cover;
+        display: none;
+    }
+
+}
 
 /* 手機板 iphone X */
 @media screen and (max-width: 375px){
