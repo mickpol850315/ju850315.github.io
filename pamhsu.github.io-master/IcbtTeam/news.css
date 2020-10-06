@@ -53,7 +53,7 @@ h5{
 background-position: center;
 background-size: cover;
 height: 0;
-padding-bottom: calc(100%/3 - 60px);
+padding-bottom: calc(100%/3 - 50px);
 }
 .swiper-pagination{
 position: absolute;
@@ -123,46 +123,50 @@ box-shadow: 7px 7px 8px #333333;
 -webkit-box-shadow: 7px 7px 8px #333333;
 -moz-box-shadow: 7px 7px 8px #333333;
 }
-@media screen and (max-width: 1200px) {
-    .swiper-slide {      
-        padding-bottom: calc(100%/2 - 60px);
-        }
-        .swiper-button-prev{
-            left: 5%;
-        }
-            .swiper-button-next{
-                right: 5%;
-                }
-                .swiper-pagination{
-                    left: 43%;
-                    }
-}
 @media screen and (max-width: 1536px){
     .swiper-container {
-        top:60%;
+        top:10%;
         }
     .swiper-slide {     
-        padding-bottom: calc(100%/3 - 100px);
+        padding-bottom: calc(100%/3 - 50px);
         }
         .swiper-button-prev{
-           top: 60;
+           top: 60%;
         }
             .swiper-button-next{
                 top: 60%;
                 }
         .swiper-pagination{
-            top: 90%;
+            top: 75%;
             left: 44%;
             }
+@media screen and (max-width: 1024px) {
+    .swiper-container {
+        top:23%;
+        }
+    .swiper-slide {      
+        padding-bottom: calc(100%/2 - 60px);
+        }
+        .swiper-button-prev{
+            left: 10%;
+        }
+            .swiper-button-next{
+                right: 10%;
+                }
+                .swiper-pagination{
+                    left: 40%;
+                    top: 70%;
+                    }
+}
+
 }
 @media screen and (max-width: 768px) {
     .swiper-container {
-        top:55%;
-        left: 50%;
-        width: 65%;
+        top:15%;
+        width: 67%;
         }
     .swiper-slide {      
-        padding-bottom: calc(100% - 10px);
+        padding-bottom: calc(100%/2 - 0px);
         }
         .swiper-button-prev{
            left: 5%;
@@ -180,8 +184,7 @@ box-shadow: 7px 7px 8px #333333;
 }
 @media screen and (max-width: 520px) {
     .swiper-container {
-        top:60%;
-        left: 50%;
+        top:9%;
         width: 50%;
         }
         .swiper-button-prev{
@@ -217,7 +220,7 @@ box-shadow: 7px 7px 8px #333333;
 @media screen and (max-width: 375px) {
 
   .swiper-container {
-        top:60%;
+        top:5%;
         width: 50%;
         }
         .swiper-button-prev{
@@ -252,17 +255,17 @@ box-shadow: 7px 7px 8px #333333;
 }
 @media screen and (max-width: 320px){
     .swiper-container {
-        top: 65%;
+        top: 5%;
         }
         .swiper-button-prev{
-            top:65%;
+            top:75%;
            
          }
          .swiper-button-next{
-            top:65%;
+            top:75%;
         
             }
     .swiper-pagination{
-        top: 90%;
+        top: 80%;
     }
 }
