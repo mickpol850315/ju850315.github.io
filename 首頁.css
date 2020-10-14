@@ -152,6 +152,9 @@ left: 5px;
     top: 600px;
     left: 150px;
 }
+.a_box{
+    display: none;
+}
 
 }
 /* 平板 ipad */
