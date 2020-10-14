@@ -197,6 +197,7 @@ left: 5px;
  .a_box{
      top: 150px;
      left: 150px;
+     display: none;
  }
  .a_box .circus{
      width: 70px;
