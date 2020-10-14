@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width: 300px;
+            height: 250px;
+            border: 2px solid black;
+            padding: 15px 40px;
+        }
+
+        h1,p{
+            opacity: 0;
+            transition-duration: 0.5s;
+
+        }
+
+        .box:hover h1 {
+            opacity: 1;
+            transition-duration: 0.5s;
+        }
+
+        .box:hover p{
+            opacity: 1;
+            transition-duration: 0.5s;
+            transition-delay: 0.5s;
+        }
+
+        .box2{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .class{
+            width: 400px;
+            height: 40px;
+            border: 2px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition-duration: 1.5s;
+        }
+
+        .class1{
+            top:25%;
+        }
+
+        .class3{
+            top: 75%;
+ 
+        }
+
+        .box2:hover .class1{
+            transition-property: transform , top;
+            transition-duration: 1.5s, 1s;
+            transform: translate(-50%,-50%) rotate(45deg);
+            top: 50%;
+        }
+
+        .box2:hover .class3{
+            transition-property: transform , top;
+            transition-duration: 1.5s, 1s;
+            transform: translate(-50%,-50%) rotate(-45deg);
+            top: 50%;
+        }
+
+        .box2:hover .class2{
+           opacity: 0;
+           transition-duration: 0.1s;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>開不了口</h1>
+        <p>就是開不了口 讓她知道
+            我一定會呵護著妳 也逗妳笑
+            妳對我有多重要 我後悔沒 讓妳知道
+            安靜的聽妳撒嬌 看妳睡著 一直到老
+            
+            就是開不了口 讓她知道
+            就是那麼簡單幾句 我辦不到
+            整顆心懸在半空 我只能夠 遠遠看著
+            這些我都做得到 但那個人已經不是我</p>
+    </div>
+
+    <div class="box2">
+        <div class="class class1"></div>
+        <div class="class class2"></div>
+        <div class="class class3"></div>
+    </div>
+    
+</body>
+</html>
